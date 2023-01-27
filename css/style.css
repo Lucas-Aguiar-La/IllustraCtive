@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Roboto:wght@100;400&family=Unbounded:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.body-container {
+  background: url("../img/body-background-img.png") no-repeat center fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+header {
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+header .logo {
+  font-size: 30px;
+  display: flex;
+  padding-top: 100px;
+  color: #ff6b0a;
+  font-family: "Unbounded", cursive;
+}
+header .logo span {
+  font-family: "Aboreto", cursive;
+  color: #63cbb6;
+  padding-top: 20px;
+}
+header .subscribe-btn {
+  width: 170px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 370px;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: rgba(99, 203, 182, 0.5490196078);
+  color: #ff6b0a;
+  font-family: "Unbounded", cursive;
+  font-size: 14px;
+  box-shadow: 4px 3px 15px black;
+  text-shadow: 2px 2px 8px black;
+  transition: 0.4s;
+}
+header .subscribe-btn:hover {
+  width: 170px;
+  height: 40px;
+  letter-spacing: 0.5px;
+  background-color: transparent;
+  color: #63cbb6;
+  text-shadow: 2px 2px 5px black;
+  box-shadow: none;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 60px;
+}
+header .btn-header {
+  padding-bottom: 20px;
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+header .btn-header .btn {
+  padding: 3px;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: #63cbb6;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  transition: 0.5s;
+}
+header .btn-header .btn:hover {
+  color: #ff6b0a;
+  background-color: rgba(99, 203, 182, 0.3960784314);
+  border-radius: 7px;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 2px black;
+}
+
+.main-container {
+  display: flex;
+}
+.main-container .text-card-section {
+  width: 40%;
+  margin-top: 45px;
+  padding: 20px;
+}
+.main-container .text-card-section .text-tittle {
+  font-family: "Aboreto", cursive;
+  padding-bottom: 10px;
+}
+.main-container .text-card-section .text-description {
+  margin-left: 10px;
+  padding: 10px;
+  width: 270px;
+}
+.main-container .slideshow-section {
+  display: flex;
+  justify-content: center;
+  width: 65%;
+  height: 30%;
+  transform: translateY(0px);
+  animation: float 2s ease-in-out infinite;
+}
+.main-container .slideshow-section .slide {
+  display: none;
+}
+.main-container .slideshow-section .slide .slide-img {
+  width: 390px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px black;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
